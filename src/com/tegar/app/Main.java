@@ -9,7 +9,7 @@ public class Main {
 		System.out.println("==FIND THE SECOND LARGEST NUMBER==");
 		System.out.println("==================================");
 		
-		int[] arrayOfNum = {1,2,3,4,5};
+		int[] arrayOfNum = {100,2,200,3,6,5,300};
 		System.out.println("Array = " + Arrays.toString(arrayOfNum));
 		
 		int highest;
@@ -46,7 +46,7 @@ public class Main {
 						secondLargest = highest;
 						highest = arrayOfNum[j];
 						System.out.println("highest changed!");
-					} else if (secondLargest < arrayOfNum[j] && secondLargest < highest) {
+					} else if (secondLargest < arrayOfNum[j] && highest != arrayOfNum[j]) {
 						secondLargest = arrayOfNum[j];
 						System.out.println("secondLargest changed!");
 					}
